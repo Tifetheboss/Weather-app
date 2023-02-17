@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background-color: rgb(21, 151, 202);
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  height: 100vh;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000d0;
+  box-shadow: 3px 5px 13px 5px black;
+  width: 100%;
+  max-width: 430px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#search {
+  margin-right: 10px;
+}
+
+input {
+  background-color: #363636d0;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 20px;
+  padding: 15px 80px 13px 15px;
+}
+
+button {
+  background-color: #363636d0;
+  border: none;
+  clip-path: circle();
+  padding: 12px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.city {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.temp {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+
+}
+
+.desc {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  margin-left: 20px;
+}
+
+.wind {
+  margin-bottom: 30px;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.weather.loading::after{
+    visibility: visible;
+    content: 'Retrieving data...';
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 25px;
+}
