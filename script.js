@@ -20,7 +20,7 @@ const weather = {
    document.querySelector('.description').innerText = description;
    document.querySelector('.temp').innerText = temp + "°C";
    document.querySelector('.humidity').innerText = "Humidity: " + humidity + "%";
-   document.querySelector('.wind').innerText = "Wind speed:" + speed + "km/h";
+   document.querySelector('.wind').innerText = "Wind speed: " + speed + "km/h";
    document.querySelector('.weather').classList.remove('loading')
   },
   search: function(){
